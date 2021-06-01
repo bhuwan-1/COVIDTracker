@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+@mixin flex ($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+
+}
+body {
+    background-color: rgb(51, 51, 51);
+}
+.head{
+    width: 100vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 40% auto;
+    place-items: center;
+    .btn{
+        display: flex;
+        margin-top: 10px;
+        .dark{
+            width: 30%;
+            height: 25%;
+            background-color: rgba(0, 0, 0, 0.397);
+            border: 1px solid black;
+            text-align: center;
+            margin-top: 1rem;
+            p{
+                font-size: 2vw;
+                color: white;
+                
+            }
+          }
+          .light{
+            width: 30%;
+            height: 25%;
+            color: black;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgba(0, 0, 0, 0.678);
+            text-align: center;
+            margin-top: 1rem;
+            p{
+                font-size: 2vw;
+                
+            }
+          }
+    }
+    
+    .puppy{
+       
+       img{
+       
+           width: 60%;
+           height: 60%;
+       }
+    }
+    .desc{
+        color: white;
+        h1{
+            font-size: 3vw;
+        }
+        h3{
+            font-size: 1.6vw;
+        }
+        
+    }
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    @include flex(column);
+    .title{
+        color: rgb(52, 223, 223);
+    }
+    #map{
+        margin-top: 2rem;
+        width: 95%;
+        height: 100%;
+        position: relative;
+        border: 2px solid purple;
+    }
+    .marker {
+        background-color: #ff00ff49;
+        width: 20px;
+        height: 20px;
+        border: 1px #ff00ffa6 solid;
+        border-radius: 50%;
+        cursor: pointer;
+        color: black;
+        animation: pulse 3s linear infinite;
+      }
+      
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 #ff00ff31, 0 0 0 0 #ff00ff31;
+    }40%{
+        box-shadow: 0 0 0 16px #ff00ff00, 0 0 0 0 #ff00ff31;
+    }80%{
+        box-shadow: 0 0 0 16px #ff00ff00, 0 0 0 10px #ff00ff00;
+    }100%{
+        box-shadow: 0 0 0 0 #ff00ff00, 0 0 0 10px #ff00ff00;
+    }
+}
+
+.table{
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    .heading{
+        margin-top: 2rem;
+           color: white;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .covid-header{
+        text-align: center;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid rgb(189, 189, 189);
+        font-size: 1.3rem;
+        
+      }
+      
+      th {
+        background-color: rgba(255, 255, 255, 0.774);
+        color: black;
+        text-align: center;
+        
+        padding: 8px;
+        border: 4px solid rgba(0, 0, 0, 0.863);
+      }
+      td{
+          font-family: Open Sans, arial;
+          color: white;
+          text-align: center;
+        
+        padding: 8px;
+        border: 1px solid rgba(192, 192, 192, 0.863);
+      }
+      
+      .table-div{
+          margin-top: 2rem;
+          background-color: rgba(32, 32, 32, 0.76);
+      }
+      
+}
+
+footer{
+    margin-top: 10rem;
+    width: 100vw;
+    height: 40vh;
+    background-color: rgba(29, 29, 29, 0.87);
+    display: flex;
+    flex-direction: column;
+    .icon{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        h4{
+            color: white;
+        }
+        nav ul li{
+            list-style-type: none;
+            float: left;
+            a{
+                margin: 1rem;
+                text-decoration: none;
+                color: white;
+                font-size: 2rem;
+               
+            }
+        }
+    }
+
+    .content{
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 1060) {
+
+}

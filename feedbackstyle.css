@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #333333;
+    /* background-color: white; */
+
+}
+.form_container{
+    background-color: #333333;
+    /* opacity: 0.7; */
+    height: 70vh;
+    width: 100%;
+    padding: 10px;
+    /* background-color: white; */
+    /* border: 1px solid pink; */
+}
+
+.super_main{
+    height: 70vh;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    margin-top: 50px;
+    /* border: 2px solid pink; */
+    display: flex;
+}
+
+.left{
+    height: inherit;
+    width: 40%;
+    background-color: rgba(52, 233,233, .35);
+    /* background-color: white; */
+    /* background-color: #2f7a6d67; */
+
+    
+
+}
+
+.left > h1{
+    color: white;
+    font-style: normal;
+    font-family: sans-serif;
+    font-weight: 600;  
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.zaiwai{
+    height: 50vh;
+    width: 100%;
+    margin-top: 91px;
+    background-image: url(/image/hmmletssee.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.right{
+    background-color: white;
+    width: 60%;
+}
+
+form{
+    /* margin-top: 40px; */
+}
+#inp {
+    width: 70%;
+    height: 40px;
+    border-radius: 17px;
+    margin-top: 30px;
+    padding-left: 20px;
+    font-family: sans-serif;
+    background-color: #50af9e67;
+    /* background-color: aliceblue; */
+    border: none;
+    /* color: rgb(58, 55, 55); */
+    color: white;
+    font-size: medium;
+    margin-left: 70px;
+    outline: none;
+    transition: 0.5s;
+}
+
+#inp:hover{
+    background-color: #2f7a6d67;
+    border: 1.3px solid black;
+}
+
+::placeholder { 
+    color:white;
+    opacity: 1; 
+    font-weight: 800;
+  }
+
+#txt{
+    width: 70%;
+    padding-left: 20px;
+    margin-top: 30px;
+    padding-left: 20px;
+    font-family: sans-serif;
+    border: none;
+    margin-left: 70px;
+    padding-top: 15px;
+    overflow: auto;
+    resize: none;
+    color:white;
+    font-size: medium;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    outline: none;
+    background-color: #50af9e67;
+    transition: 0.5s;
+
+    /* background-color: aliceblue; */
+}
+
+#txt:hover{
+    background-color: #2f7a6d67;
+    border: 1.3px solid black;
+
+}
+#msg_btn{
+    width: 70%;
+    height:40px;
+    margin-left: 70px; 
+    margin-top: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 17px;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+#msg_btn:hover{
+    background-color: transparent;
+    color: black;
+    border: 1.5px solid black;
+}
+/* modal css */
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0,0, 0.7);
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.model-contents{
+    height: 200px;
+    width: 350px;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+}
+
+.model_img{
+    height: 50px;
+    /* background-color: pink; */
+    background-color: rgba(92, 203, 236, 0.507);
+    width: 100%;
+}
+
+.model-contents > p{
+    font-family: sans-serif;
+    font-size: larger;
+    color: black;
+    padding: 10px;
+    font-weight: 600;
+}
+.close{
+    position:absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);  
+    cursor:pointer;
+}
+
+#button{
+    height: 40px;
+    width: 40%;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: medium;
+    background-color: rgba(92, 203, 236, 0.507);
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+#button:hover{
+    background-color: rgba(52, 233,233, .35);
+    border: 1px solid black;
+}
